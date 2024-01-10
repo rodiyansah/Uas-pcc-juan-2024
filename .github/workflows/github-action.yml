@@ -16,4 +16,4 @@ jobs:
           docker build -t ${{secrets.USERNAME}}/uas-pcc-juan-2024:latest -f Dockerfile .
 
       - name: Push to Dockerhub
-        run : docker login -u ${{secrets.USERNAME}} -p  ${{secrets.ACCESS_TOKEN}} && docker push ${{secrets.USERNAME}}/uas-pcc-juan-2024:latest~
+        run : docker login -u ${{secrets.USERNAME}} -p  ${{secrets.ACCESS_TOKEN}} && docker push ${{secrets.USERNAME}}/uas-pcc-juan-2024:latest
